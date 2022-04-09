@@ -1,1 +1,1 @@
-Bongo Bu odamlar uchun ijtimoiy tarmoq
+Uzbook Bu odamlar uchun ijtimoiy tarmoq
