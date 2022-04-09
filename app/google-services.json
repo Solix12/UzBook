@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "272116435209",
+    "project_id": "uzboock",
+    "storage_bucket": "uzboock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272116435209:android:2a9193ad3fcaa0b768ebd8",
+        "android_client_info": {
+          "package_name": "com.salikh.uzboock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272116435209-tcijce7s23ugn2dhgfsqfu5hc27vepmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPTN2hhKtTHiUxS7SAZuWklrDOckmwf8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272116435209-tcijce7s23ugn2dhgfsqfu5hc27vepmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

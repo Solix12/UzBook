@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/lobster"
+            android:text="@string/brand_name"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="@+id/image_profile_notification"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_profile_notification" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_profile_notification"
+            android:layout_width="@dimen/_30mdp"
+            android:layout_height="@dimen/_30mdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:padding="4dp"
+            android:src="@drawable/defaunt_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/green_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/image_profile_notification"
+            app:layout_constraintEnd_toEndOf="@+id/image_profile_notification"
+            app:layout_constraintStart_toStartOf="@id/image_profile_notification"
+            app:layout_constraintTop_toTopOf="@+id/image_profile_notification" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="0.2dp"
+            android:layout_marginTop="11dp"
+            android:background="#CDCBCB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrolVIre"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/postImg"
+                            android:layout_width="@dimen/_130mdp"
+                            android:layout_height="@dimen/_80mdp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/defaunt_icon"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:riv_border_color="#333"
+                            app:riv_border_width="1dip"
+                            app:riv_corner_radius="10dip"
+                            app:riv_mutate_background="true"
+                            app:riv_tile_mode="repeat" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:background="@drawable/black_shape"
+                            app:layout_constraintBottom_toBottomOf="@id/postImg"
+                            app:layout_constraintEnd_toEndOf="@+id/postImg"
+                            app:layout_constraintStart_toStartOf="@id/postImg"
+                            app:layout_constraintTop_toTopOf="@id/postImg" />
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:src="@drawable/add_store"
+                            app:layout_constraintBottom_toBottomOf="@id/postImg"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/postImg"
+                            app:layout_constraintTop_toTopOf="@+id/postImg"
+                            app:layout_constraintVertical_bias="0.4" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/baloo"
+                            android:gravity="center"
+                            android:text="Creat store"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="@id/postImg"
+                            app:layout_constraintEnd_toEndOf="@id/postImg"
+                            app:layout_constraintStart_toStartOf="@id/postImg"
+                            app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                        android:id="@+id/storyRv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:shimmer_demo_child_count="10"
+                        app:shimmer_demo_layout="@layout/demo_story"
+                        tools:itemCount="1"
+                        tools:listitem="@layout/story_rv_design" />
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="wrap_content"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/dashboard_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrolVIre"
+        app:shimmer_demo_child_count="10"
+        app:shimmer_demo_layout="@layout/demo_post"
+        tools:listitem="@layout/dashboard_rv_simple" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
